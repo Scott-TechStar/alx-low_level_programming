@@ -12,11 +12,11 @@ long sizelong;
 long long sizelonglong;
 float sizefloat;
 
-printf("Size of char: %lu byte(s)\n", sizeof(sizechar));
-printf("Size of int: %lu byte(s)\n", sizeof(sizeint));
-printf("Size of long int: %lu byte(s)\n", sizeof(sizelong));
-printf("Size of long long int: %lu byte(s)\n", sizeof(sizelonglong));
-printf("Size of float: %lu byte(s)\n", sizeof(sizefloat));
+printf("Size of a char: %lu byte(s)\n", sizeof(sizechar));
+printf("Size of an int: %lu byte(s)\n", sizeof(sizeint));
+printf("Size of a long int: %lu byte(s)\n", sizeof(sizelong));
+printf("Size of a long long int: %lu byte(s)\n", sizeof(sizelonglong));
+printf("Size of a float: %lu byte(s)\n", sizeof(sizefloat));
 
 return (0);
 }
