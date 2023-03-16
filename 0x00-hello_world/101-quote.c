@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-
 /**
  * main - Entry point.
  * Description: prints '"and that piece of art is useful"
