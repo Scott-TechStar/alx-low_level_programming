@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  *Main- Entry Point.
- *Description: 'This program will assign a random number to the variable n '
+ *Description: prints 'n is positive, negative or zero'
  *Return: Always 0 (success).
  */
 int main(void)
