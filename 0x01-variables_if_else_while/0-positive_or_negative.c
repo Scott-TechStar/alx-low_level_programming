@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *Main- Entry Point.
- *Description: prints 'n is positive, negative or zero'
+ *Main- Determines if a number is positive, negative or zero.
+ *Description: 'Determines if a number is positive, negative or zero.'
  *Return: Always 0 (success).
  */
 int main(void)
