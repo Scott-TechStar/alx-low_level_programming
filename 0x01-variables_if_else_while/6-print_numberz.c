@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - prints base 10 numbers and new line 
+ * main - prints base 10 numbers and new line
  *
- * Return: Always 0 (successs)
+ * Return: Always 0(success)
  */
 int main(void)
 {
