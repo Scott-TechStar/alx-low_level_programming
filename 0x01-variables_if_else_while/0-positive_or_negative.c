@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 /**
  *Main- Entry Point.
- *Description: Check whether the random number is positive or negative.
+ *Description: This program will assign a random number to the variable n each time it is executed.
  *Return: Always 0 (success).
  */
 int main(void)
