@@ -15,7 +15,7 @@ while (i <= 999)
 m = (i / 100 + '0');
 n = (i / 10 % 10 + '0');
 o = (i % 10 + '0');
-if ((m < n) && (n < o))
+if ((m < n)&&(n < o))
 {
 putchar(m);
 putchar(n);
