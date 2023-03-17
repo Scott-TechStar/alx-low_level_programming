@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - prints '"and that piece of art is useful"- Dora Korpar, 2015-1 0-19'.
+ * main- and that piece of art is u seful"-Dora Korpar, 2015-1 0-19'.
  *
  * Return: Always 1(success)
  */
