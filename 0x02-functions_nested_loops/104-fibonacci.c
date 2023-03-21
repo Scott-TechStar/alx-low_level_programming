@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - 1St 98 fibonacci 
+ * main - 1St 98 fibonacci
  *
  * Return: Always 0.
  */
