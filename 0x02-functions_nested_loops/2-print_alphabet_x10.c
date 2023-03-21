@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <main.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * Main - Function to print lowercase letters x10
  *
