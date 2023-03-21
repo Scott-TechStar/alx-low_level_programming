@@ -19,13 +19,13 @@ for (min2 = 48; min2 <= 57; min2++)
 if ((hr1 > 50) && (hr2 < 52))
 {
 break;
+} 
 _putchar(hr1);
 _putchar(hr2);
 _putchar(58);
 _putchar(min1);
 _putchar(min2);
 _putchar('\n');
-}
 }
 }
 }
