@@ -3,6 +3,8 @@
 /**
  * print_sign - checks if n is greater, less than or zero
  *
+ * @n: Integer
+ *
  * Return: Return 1 if >0, -1 if less and 0 if 0
  */
 int print_sign(int n)

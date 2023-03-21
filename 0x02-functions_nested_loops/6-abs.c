@@ -3,7 +3,9 @@
 /**
  * _abs - Absolute value of integer
  *
- * Return: Returns the integer 
+ * @n: Integer
+ *
+ * Return: Absolute value
  */
 int _abs(int n)
 {
