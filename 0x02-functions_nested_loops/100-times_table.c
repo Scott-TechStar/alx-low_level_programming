@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* times_table - prints the n times table
+* print_times_table - prints the n times table
 *
 * @n: Input integer
 *
@@ -10,12 +10,12 @@
 void print_times_table(int n)
 {
 int l, m, p;
-if ((n > 0) && (n < 15))
+if ((n >= 0) && (n <= 15))
 {
-for (l = 0; l <= 9; l++)
+for (l = 0; l <= n; l++)
 {
 _putchar(48);
-for (m = 1; m <= 9; m++)
+for (m = 1; m <= n; m++)
 {
 p = l * m;
 _putchar(44);
