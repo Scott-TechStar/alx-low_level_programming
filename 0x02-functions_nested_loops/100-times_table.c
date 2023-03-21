@@ -7,7 +7,7 @@
 *
 * Return: no return
 */
-void ptint_times_table(int n)
+void print_times_table(int n)
 {
 int l, m, p;
 if ((n > 0) && (n < 15))
