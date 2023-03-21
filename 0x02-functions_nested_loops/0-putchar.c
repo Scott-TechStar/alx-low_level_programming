@@ -5,10 +5,9 @@
  *
  * Return: Always 0(success)
  */
-void main(void)
+int _putchar(char c[] = "_putchar";)
 {
 int a;
-char c[] = "_putchar";
 for (a = 0; a < 8; a++)
 {
 _putchar(c[a]);
