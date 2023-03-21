@@ -30,8 +30,8 @@ _putchar(32);
 }
 if (p >= 100)
 {
-_putchar((p / 100) + 48 );
-_putchar(((p / 10) % 10) + 48 );
+_putchar((p / 100) + 48);
+_putchar(((p / 10) % 10) + 48);
 }
 else if ((n <= 99) && (n >= 10))
 {
