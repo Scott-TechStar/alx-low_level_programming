@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <main.h>
 /**
- * Main - Prints _putchar
+ * _putchar - Prints _putchar
  *
  * Return: Always 0(success)
  */
-int main(void)
+int _putchar(char c)
 {
 int a;
 char c[] = "_putchar";
