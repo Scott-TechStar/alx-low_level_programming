@@ -16,7 +16,7 @@ for (min1 = 48; min1 <= 53; min1++)
 {
 for (min2 = 48; min2 <= 57; min2++)
 {
-if ((hr1 > 50) && (hr2 < 52))
+if ((hr1 > 50) && (hr2 >= 52))
 {
 break;
 } 
