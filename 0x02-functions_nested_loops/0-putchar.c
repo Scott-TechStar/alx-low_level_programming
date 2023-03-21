@@ -5,10 +5,10 @@
  *
  * Return: Always 0(success)
  */
-int _putchar(char c)
+int _putchar(char c[])
 {
 int a;
-char c[a] = "_putchar";
+char c[] = "_putchar";
 for (a = 0; a < 8; a++)
 {
 _putchar(c[a]);

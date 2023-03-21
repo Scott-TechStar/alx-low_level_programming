@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * Print_alphabet - Funtions to print lowecase leters
+ * print_alphabet - Funtions to print lowecase leters
  *
  * Return: Always 0(success)
  */
