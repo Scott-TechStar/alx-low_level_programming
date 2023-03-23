@@ -8,29 +8,15 @@
  */
 void print_number(int n)
 {
-int c, th;
-int s = 1;
-int o = n % 10;
-n /= 10;
-c = n;
-if (o < 0)
+unsigned int k = n;
+if (n < 0)
 {
-o *= -1, c *= -1, n *= -1;
+n *= -1;
+k = n;
 _putchar('-');
 }
-if (c > 0)
-{
-while (c / 10 != 0)
-{
-c /= 10, s *= 10;
-}
-while (s > 0)
-{
-th = n / s;
-_putchar('0' + th);
-n -= th * s;
-s /= 10;
-}
-}
-_putchar('0' + o);
+k /= 10;
+if (k != 0)
+print_number(k);
+_putchar((unsigned int) n % 10 + '0');
 }
