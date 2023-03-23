@@ -1,15 +1,15 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
- * _isupper - checks if letter is uppercase
+ * _isupper - checks for uppercase letters
  *
- * @c: Input Integer
+ * @c: ASCII code character
  *
- * Return: Return 1 if uppercase else 0
+ * Return: Return 1 if uppercase else return 0
  */
 int _isupper(int c)
 {
-if (c > 65 && c < 91)
+if (((c >= 65) && (c < 91)) || ((c >= 97) && (c < 123)))
 {
 return (1);
 }
@@ -17,4 +17,5 @@ else
 {
 return (0);
 }
+_putchar('\n');
 }
