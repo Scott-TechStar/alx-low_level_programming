@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_numbers - print numbers 
+ * print_numbers - print numbers
  *
- * Return: null 
+ * Return: null
  */
 void print_numbers(void)
 {
 int i;
-for (i = 0; i <= 9; i++)
+for (i = 0; i < 9; i++)
 {
 _putchar(i);
 }
