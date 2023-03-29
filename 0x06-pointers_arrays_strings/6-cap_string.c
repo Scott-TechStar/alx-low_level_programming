@@ -7,10 +7,10 @@
  */
 char *cap_string(char *str)
 {
-int tmp;
-if (str[tmp] >= 'a' && str[tmp] <= 'z')
+int tmp = 0;
+if (str[0] >= 'a' && str[0] <= 'z')
 {
-str[tmp] = str[tmp] - 32;
+str[0] = str[0] - 32;
 }
 for (tmp = 0; str[tmp] != '\0'; tmp++)
 {
