@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * *cap_string - Capitalizes all words of a string.
  * @n: The string to be capitalized
@@ -7,18 +8,21 @@
  */
 char *cap_string(char *n)
 {
-int tmp = 0;
-while (n[tmp] != '\0')
+int len = 0, i;
+int j = 13;
+char tmp[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+while (n[len])
 {
-while (!(n[tmp] >= 'a' && n[tmp] <= 'z'))
+i = 0;
+while (i <j)
 {
-tmp++;
+if ((len == 0 || n[len - 1] == tmp[i]) && (n[len] >= 97 && n[len] <= 122))
+{
+n[len] -= 32;
 }
-if (n[tmp - 1] == ' ' || n[tmp - 1] == '\t' || n[tmp- 1] == '\n' || n[tmp - 1] == ',' || n[tmp - 1] == ';' || n[tmp - 1] == '.' || n[tmp - 1] == '!' || n[tmp - 1] == '?' || n[tmp - 1] == '"' || n[tmp - 1] == '(' || n[tmp - 1] == ')' || n[tmp - 1] == '{' || n[tmp - 1] == '}' || tmp == 0)
-{
-n[tmp] -= 32;
+i++;
 }
-tmp++;
+len++;
 }
 return (n);
 }
