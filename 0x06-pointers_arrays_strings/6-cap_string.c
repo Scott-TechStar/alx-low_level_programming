@@ -15,7 +15,7 @@ str[0] = str[0] - 32;
 }
 for (tmp = 0; str[tmp] != '\0'; tmp++)
 {
-switch str[tmp]
+switch (str[tmp])
 {
 case ',':
 case ';':
