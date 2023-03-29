@@ -12,7 +12,7 @@ if (str[tmp] >= 'a' && str[tmp] <= 'z')
 {
 str[tmp] = str[tmp] - 32;
 }
-for (tmp = 0; str[tmp] != 0; tmp++)
+for (tmp = 0; str[tmp] != '\0'; tmp++)
 {
 switch str[tmp]
 {
