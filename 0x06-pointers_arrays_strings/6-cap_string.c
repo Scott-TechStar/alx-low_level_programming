@@ -9,7 +9,7 @@ char *cap_string(char *str)
 {
 int tmp;
 tmp = 0;
-if (str[0] >= 'a' && str[0] <= 'z')
+ if (!(str[0] >= 'a' && str[0] <= 'z'))
 {
 str[0] = str[0] - 32;
 }
