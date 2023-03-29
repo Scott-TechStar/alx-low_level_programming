@@ -29,7 +29,7 @@ case '}':
 case ' ':
 case '\n':
 case '\t':
-if (str[tmp + 1] > 96 && str(tmp + 1 < 123))
+if (str[tmp + 1] > 96 && str(tmp + 1 < 123)
 {
 str[tmp + 1] = str[tmp + 1] - 32;
 }
