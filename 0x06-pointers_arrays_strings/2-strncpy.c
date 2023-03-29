@@ -7,7 +7,7 @@
  *
  * Return: A pointer to the resulting string dest.
  */
-char *_strncpy(char *dest, char *srcint n)
+char *_strncpy(char *dest, char *src, int n)
 {
 int len = 0;
 while (len < n && src[len] != '\0')
