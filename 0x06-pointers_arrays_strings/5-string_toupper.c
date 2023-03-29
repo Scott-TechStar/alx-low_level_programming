@@ -16,5 +16,5 @@ s[len] = s[len] - 32;
 }
 len++;
 }
-return [s]
+return (s);
 }
