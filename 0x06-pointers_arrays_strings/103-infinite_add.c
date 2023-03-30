@@ -11,21 +11,63 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int index, n1_len = 0, n2_len = 0;
-for (index = 0; *(n1 + index); index++)
+int i = 0, j = 0, k, l = 0, f, s, d = 0;
+while (n1[i] != '\0')
 {
-n1_len++;
+i++;
 }
-for (index = 0; *(n2 + index); index++)
+while (n2[j] != '\0')
 {
-n2_len++;
+j++;
 }
-if (size_r <= n1_len + 1 || size_r <= n2_len + 1)
+if (i > j)
+{
+l = i;
+}
+else
+{
+l = j;
+}
+if (l + 1 > size_r)
 {
 return (0);
 }
-n1 += n1_len - 1;
-n2 += n2_len - 1;
-*(r + size_r) = '\0';
-return (add_strings(n1, n2, r, --size_r));
+r[l] = '\0';
+for (k = l - 1 ; k >= 0 ; k--)
+{
+i--;
+j--;
+if (i >= 0)
+{
+f = n1[i] - '0';
+}
+else
+{
+f = 0;
+}
+if (j >= 0)
+{
+s = n2[j] - '0';
+}
+else
+{
+s = 0;
+}
+r[k] = (f + s + d) % 10 + '0';
+d = (f + s + d) / 10;
+}
+if (d == 1)
+{
+r[l + 1] = '\0';
+if (l + 2 > size_r)
+{
+return (0);
+}
+while (l-- >= 0)
+{
+r[l + 1] = r[l];
+}
+r[0] = d + '0';
+}
+return (r);
 }
