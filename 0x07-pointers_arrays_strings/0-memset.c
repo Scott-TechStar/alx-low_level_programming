@@ -7,13 +7,14 @@
  *
  * Return: A pointer to memory area @s.
  */
-void *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int index;
-unsigned char *mem = s, size = b;
-for (index = 0; index < n; index++)
+int i = 0;
+while (n > 0)
 {
-mem[index] = size;
+s[i] = b;
+i++;
+n--;
 }
-return (mem);
+return (s);
 }
