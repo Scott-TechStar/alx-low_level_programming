@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * root  - returns the natural square root of a number.
+ * root - returns the natural square root of a number.
  * @y: input number.
  * @x: iterator.
  * Return: square root or -1.
@@ -35,5 +35,5 @@ if (n == 0 || n == 1)
 {
 return (n);
 }
- return (root(n, 2));
+return (root(n, 2));
 }
