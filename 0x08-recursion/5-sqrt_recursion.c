@@ -35,5 +35,5 @@ if (n == 0 || n == 1)
 {
 return (n);
 }
-return (root(2, n, n));
+ return (root(n, 2));
 }
