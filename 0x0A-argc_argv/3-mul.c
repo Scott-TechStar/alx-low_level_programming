@@ -16,7 +16,6 @@ if (argc <= 2)
 printf("Error\n");
 return (1);
 }
-//convert string to int
 a = atoi(argv[1]);
 b = atoi(argv[2]);
 mul = a * b;
