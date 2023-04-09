@@ -17,8 +17,8 @@ return (1);
 }
 else
 {
-a = atoi(argv[a]);
-b = atoi(argv[b]);
+a = atoi(argv[1]);
+b = atoi(argv[2]);
 mul = a * b;
 printf("%d\n", mul);
 }
