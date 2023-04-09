@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 int a, b;
-if (argc <= 2 && argc != 0)
+if (argc == 2 || argc == 1)
 {
 printf("Error\n");
 return (1);
@@ -21,7 +21,7 @@ b = 1;
 for (a = 1; a < 3; a++)
 {
 b *= atoi(argv[a]);
-printf("%d\n",  b);
+printf("%d\n",b);
 }
 }
 return (0);
