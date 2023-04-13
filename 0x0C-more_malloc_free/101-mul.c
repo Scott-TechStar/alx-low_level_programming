@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-in _len(char *str);
+int _len(char *str);
 char *_array(int size);
 char *_zero(char *str);
 void _prod(char *prod, char *mult, int digit, int zeroes);
