@@ -53,7 +53,8 @@ typedef struct op
     int (*f)(int a, int b);
 } op_t;
 </code>
-
+<br>
+<hr>
 
 ```3-op_functions.c```
 
@@ -91,7 +92,8 @@ op_t ops[] = {
     };
     int i;
 </code>
-
+<br>
+<hr>
 
 ```3-main.c```
 
