@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 {
 va_list args;
 int i = 0, j = 0;
-char *sptr = "";
+char *sprt = "";
 printer_t funcs[] = {
 {"c", _char},
 {"i", _int},
