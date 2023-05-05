@@ -14,5 +14,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int _putchar(char c);
 
 
+unsigned int _stoi(char c);
+unsigned int _strlen(const char *s);
+
 
 #endif 
