@@ -4,8 +4,6 @@
  */
 
 #include "hash_tables.h"
-#include <stdlib.h>
-
 /**
  * hash_table_create - Creates a hash table.
  * @size: The size of the array.
@@ -13,23 +11,21 @@
  * Return: If an error occurs - NULL.
  *         Otherwise - a pointer to the new hash table.
  */
+hash_table_t *hash_table_create(unsigned long int size)
+{
+	hash_table_t *ht;
+	unsigned long int i;
 
-// Function to create a hash table
-hash_table_t *hash_table_create(unsigned long int size) {
-    // Allocate memory for the hash table
-    hash_table_t *hash_table_s = (hash_table_t *)malloc(sizeof(hash_table_t));
-    if (hash_table_s == NULL) {
-        return NULL; // Return NULL if memory allocation failed
-    }
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
+		return (NULL);
 
-    // Allocate memory for the array of linked lists
-    hash_table_s->array = (hash_node_t **)calloc(size, sizeof(hash_node_t *));
-    if (hash_table_s->array == NULL) {
-        free(hash_table_s);
-        return NULL; // Return NULL if memory allocation failed
-    }
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+		ht->array[i] = NULL;
 
-    hash_table_s->size = size; // Set the size of the hash table
-
-    return hash_table_s;
+	return (ht);
 }
