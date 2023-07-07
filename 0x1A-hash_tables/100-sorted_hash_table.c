@@ -2,7 +2,6 @@
  * File: 100-sorted_hash_table.c
  * Auth: John Mwadime
  **/
-
 #include "hash_tables.h"
 /**
  * shash_table_create - Creates a sorted hash table.
@@ -31,7 +30,6 @@ shash_table_t *shash_table_create(unsigned long int size)
 
 	return (ht);
 }
-
 /**
  * shash_table_set - Adds an element to a sorted hash table.
  * @ht: A pointer to the sorted hash table.
@@ -114,7 +112,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 	return (1);
 }
-
 /**
  * shash_table_get - Retrieve the value associated with
  *                   a key in a sorted hash table.
@@ -142,7 +139,6 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 	return ((node == NULL) ? NULL : node->value);
 }
-
 /**
  * shash_table_print - Prints a sorted hash table in order.
  * @ht: A pointer to the sorted hash table.
