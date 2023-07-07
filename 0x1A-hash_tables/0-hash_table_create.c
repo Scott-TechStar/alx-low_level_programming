@@ -17,19 +17,19 @@
 // Function to create a hash table
 hash_table_t *hash_table_create(unsigned long int size) {
     // Allocate memory for the hash table
-    hash_table_t *hash_table = (hash_table_t *)malloc(sizeof(hash_table_t));
-    if (hash_table == NULL) {
+    hash_table_t *hash_table_s = (hash_table_t *)malloc(sizeof(hash_table_t));
+    if (hash_table_s == NULL) {
         return NULL; // Return NULL if memory allocation failed
     }
 
     // Allocate memory for the array of linked lists
-    hash_table->array = (node_t **)calloc(size, sizeof(node_t *));
-    if (hash_table->array == NULL) {
-        free(hash_table);
+    hash_table_s->array = (hash_node_t **)calloc(size, sizeof(hash_node_t *));
+    if (hash_table_s->array == NULL) {
+        free(hash_table_s);
         return NULL; // Return NULL if memory allocation failed
     }
 
-    hash_table->size = size; // Set the size of the hash table
+    hash_table_s->size = size; // Set the size of the hash table
 
-    return hash_table;
+    return hash_table_s;
 }
