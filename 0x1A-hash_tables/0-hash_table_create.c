@@ -1,3 +1,7 @@
+/*
+ * File: 0-hash_table_create.c
+ * Auth: John Mwadime
+ */
 #include "hash_tables.h"
 /**
  * hash_table_create - Creates a hash table.
