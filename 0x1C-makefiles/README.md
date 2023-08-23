@@ -12,7 +12,7 @@ In this project, I practiced writing Makefiles.
 Used for Makefile practice purposes throughout project. Provided by Alx School.
 
 * [main.c](./main.c): Main C function that runs the function defined in
-[holberton.c](./school.c).
+[school.c](./school.c).
 Provided b Alx School.
 
 ## Header File :file_folder:
@@ -24,7 +24,7 @@ Provided by Alx School.
 
 * **0. make -f 0-Makefile**
   * [0-Makefile](./0-Makefile): Makefile that creates an executable `school` based on
-  [holberton.c](./school.c) and [main.c](./main.c). Includes:
+  [school.c](./school.c) and [main.c](./main.c). Includes:
     * Rule `all` that builds the executable.
 
 * **1. make -f 1-Makefile**
