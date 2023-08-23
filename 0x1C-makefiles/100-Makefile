@@ -1,54 +1,23 @@
 # Makefile for building 'school' executable
 # Auth: John Mwadime
 
-# Compiler and compiler flags
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -pedantic
-
-# Source files
 SRC = main.c school.c
-# Automatically generate object file names from source file names
 OBJ = $(SRC:.c=.o)
-
-# Name of the executable
 NAME = school
-
-# Define the RM variable for deleting files
-RM = /bin/rm -f
-
-# Default rule
-all: $(NAME)
-
-# Rule to build the executable
-$(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-
-# Clean rule to delete temporary files and the executable
-clean:
-	$(RM) *~ .*~ $(NAME)
-
-# OClean rule to delete object files
-oclean:
-	$(RM) $(OBJ)
-
-# FClean rule to delete temporary files, the executable, and object files
-fclean: clean oclean
-
-# RE rule to force recompilation of all source files
-re: fclean all
-
-# Automatically generated dependencies for object files
--include $(OBJ:.o=.d)
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 .PHONY: all clean oclean fclean re
 
-# Define the CC and CFLAGS only once for all compilation rules
-%.o: %.c
-	$(CC) $(CFLAGS) -c -MMD -MP $< -o $@
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
-# Check for the existence of the header file m.h
-main.o: main.c m.h
-	$(CC) $(CFLAGS) -c -MMD -MP $< -o $@
+clean:
+	$(RM) *~ $(NAME)
 
-school.o: school.c m.h
-	$(CC) $(CFLAGS) -c -MMD -MP $< -o $@
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all 
