@@ -2,7 +2,10 @@
 """
 5-main
 """
-island_perimeter = __import__('5-island_perimeter').island_perimeter
+import sys
+sys.path.append('..')  # Add parent directory to the Python path
+
+from ('5-island_perimeter') import island_perimeter  # Now you can directly import the function
 
 if __name__ == "__main__":
     grid = [
